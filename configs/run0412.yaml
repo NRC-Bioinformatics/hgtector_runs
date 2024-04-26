@@ -1,0 +1,6 @@
+bins: /mnt/workspace/analyses/omics/hgtector/protein_bins
+work_directory: wd_0412
+hgdb: /mnt/workspace/analyses/omics/hgtector/hgtdb_20230102
+#hgdb: /mnt/workspace/analyses/omics/hgtector_prepare/db2
+#hgdb_large: /mnt/workspace/analyses/omics/hgtector/hgtdb_20230102
+

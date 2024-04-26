@@ -1,0 +1,20 @@
+#BinID	Completeness	Contamination	Strain heterogeneity	GenomeSize(bp)	N_Contig	N50(bp)	GC	GTDB-Taxa
+bin.1	98.43	0.99	0.00	5281460	1	5281460	0.71459	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Rhizobiales;f__Beijerinckiaceae;g__Salinarimonas;s__
+bin.2	100.00	0.00	0.00	3962322	1	3962322	0.39833	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Cytophagales;f__Cyclobacteriaceae;g__Algoriphagus;s__
+bin.3	86.56	2.70	80.00	3520134	74	67937	0.36345	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Crocinitomicaceae;g__;s__
+bin.4	99.45	1.14	0.00	3233947	1	3233947	0.66182	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Caulobacterales;f__Maricaulaceae;g__Oceanicaulis;s__
+bin.5	97.19	0.20	0.00	2908195	2	2362761	0.65060	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Rhizobiales;f__MH13;g__MH13;s__
+bin.6	98.78	0.00	0.00	5752838	5	5461907	0.41037	d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Cyanobacteriales;f__Nostocaceae;g__Nodularia;s__Nodularia
+bin.7	86.93	0.00	0.00	3246209	1	3246209	0.64849	d__Bacteria;p__Planctomycetota;c__Phycisphaerae;o__Phycisphaerales;f__UBA1924;g__UBA6054;s__
+bin.8	85.46	1.44	33.33	6176557	41	322590	0.59406	d__Bacteria;p__Planctomycetota;c__Planctomycetia;o__Pirellulales;f__Pirellulaceae;g__M30B19;s__
+bin.9	97.47	0.30	25.00	4104996	6	620707	0.59683	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Rhizobiales;f__Rhizobiaceae;g__Hoeflea;s__
+bin.10	97.16	0.31	80.00	3362602	7	645353	0.67206	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae;g__Erythrobacter;s__
+bin.11	99.32	0.45	0.00	4448596	2	2845860	0.66502	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Rhodobacter_F;s__
+bin.12	96.77	0.69	20.00	5904146	6	2361988	0.69949	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Rhizobiales;f__Pseudoxanthobacteraceae;g__;s__
+bin.13	95.00	6.67	28.57	7420032	38	476661	0.50225	d__Bacteria;p__Planctomycetota;c__Planctomycetia;o__Planctomycetales;f__Planctomycetaceae;g__Gimesia;s__
+bin.14	86.27	1.60	62.50	3761493	59	80849	0.67313	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Xanthomonadales;f__Xanthomonadaceae;g__CAU-1598;s__
+bin.15	88.89	3.01	33.33	2408035	70	67041	0.59797	d__Bacteria;p__Bacteroidota;c__Rhodothermia;o__Balneolales;f__HLUCCA01;g__;s__
+bin.16	63.85	0.29	33.33	3254060	195	21900	0.69596	d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Rubrivivax;s__
+bin.17	60.11	1.36	33.33	2120929	119	23064	0.67544	d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Actinomycetales;f__Microbacteriaceae;g__Chryseoglobus;s__
+bin.18	72.88	3.04	12.50	4811050	104	70307	0.70564	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Thalassobaculales;f__Thalassobaculaceae;g__Thalassobaculum_A;s__
+bin.19	54.31	1.72	0.00	3389781	39	112480	0.63250	d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Rhizobiales;f__Rhizobiaceae;g__Hoeflea;s__Hoeflea

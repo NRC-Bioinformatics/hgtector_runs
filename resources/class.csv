@@ -1,0 +1,19 @@
+phylum,class,order,family,genus,N,Compl,bin,
+Pseudomonadota 1224,Alphaproteobacteria 28211,Hyphomicrobiales 356,Salinarimonadaceae 2137278,Salinarimonas 690086,3,98.43,bin.1,
+Bacteroidota 976,Cytophagia 768503,Cytophagales 768507,Cyclobacteriaceae 563798,Algoriphagus 246875,43,100,bin.2,
+Bacteroidota 976,Flavobacteriia 117743,Flavobacteriales 200644,Crocinitomicaceae 1853230,,193,86.56,bin.3,
+Pseudomonadota 1224,Alphaproteobacteria 28211,Maricaulales 2800059,Maricaulaceae 2800061,Alkalicaulis 2800082,2,99.45,bin.4,
+Pseudomonadota 1224,Alphaproteobacteria 28211,Hyphomicrobiales 356,Rhizobiaceae 82115,Rhizobium 379,161,97.19,bin.5,Classification is good only up to order
+Cyanobacteriota 1117,Cyanophyceae 3028117,Nostocales 1161,Aphanizomenonaceae 1892259,Nodularia 159191,6,98.78,bin.6,
+Bacillota 1239,Bacilli 91061,Bacillales 1385,Paenibacillaceae 186822,Paenibacillus 44249,93,86.93,bin.7,Unreliable
+Planctomycetota 203682,Planctomycetia 203683,Pirellulales 2691354,Pirellulaceae 2691357,Rhodopirellula 265488,12,85.46,bin.8,"Unreliable, majority protein match goes to other"
+Pseudomonadota 1224,Alphaproteobacteria 28211,Hyphomicrobiales 356,Phyllobacteriaceae 69277,Hoeflea 274591,13,97.47,bin.9,Hoeflea is not among top hits
+Pseudomonadota 1224,Alphaproteobacteria 28211,Sphingomonadales 204457,Erythrobacteraceae 335929,Erythrobacter 1041,48,97.16,bin.10,Once again not the most abundant. Agrees only at order
+Pseudomonadota 1224,Alphaproteobacteria 28211,Rhodobacterales 204455,Paracoccaceae 31989,Rhodobacter 1060,23,99.32,bin.11,Family coud be wrong
+Pseudomonadota 1224,Alphaproteobacteria 28211,Hyphomicrobiales 356,Phyllobacteriaceae 69277,Mesorhizobium 68287,225,96.77,bin.12,Order is good only
+Planctomycetota 203682,Planctomycetia 203683,Planctomycetales 112,Planctomycetaceae 126,Gimesia 1649453,9,95,bin.13,Nothing similar
+Pseudomonadota 1224,Gammaproteobacteria 1236,Xanthomonadales 135614,Xanthomonadaceae 32033,Pseudoxanthomonas 83618,43,86.27,bin.14,HGtector classification differs at genus level
+Balneolota 1936987,Balneolia 1853221,Balneolales 1853223,Balneolaceae 1813606,Balneola 455358,2,88.89,bin.15,Siaip neaiski visai
+Pseudomonadota 1224,Betaproteobacteria 28216,Burkholderiales 80840,Sphaerotilaceae 2975441,Rubrivivax 28067,10,63.85,bin.16,
+Actinomycetota 201174,Actinomycetes 1760,Micrococcales 85006,Microbacteriaceae 85023,Microbacterium 33882,295,60.11,bin.17,
+Pseudomonadota 1224,Alphaproteobacteria 28211,Rhodospirillales 204441,Thalassobaculaceae 2844864,Thalassobaculum 526215,4,72.88,bin.18,

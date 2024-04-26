@@ -1,0 +1,19 @@
+wd_0412/analyses/nod_bin.10_info.txt:All input genomes belong to 2800788 (Erythrobacter/Porphyrobacter group (no rank)).
+wd_0412/analyses/nod_bin.11_info.txt:All input genomes belong to 31989 (family Rhodobacteraceae).
+wd_0412/analyses/nod_bin.12_info.txt:All input genomes belong to 356 (order Hyphomicrobiales).
+wd_0412/analyses/nod_bin.13_info.txt:All input genomes belong to 1649453 (genus Gimesia).
+wd_0412/analyses/nod_bin.14_info.txt:All input genomes belong to 2933270 (species Lysobacter sp. CAU 1642).
+wd_0412/analyses/nod_bin.15_info.txt:All input genomes belong to 68336 (clade Bacteroidetes/Chlorobi group).
+wd_0412/analyses/nod_bin.16_info.txt:All input genomes belong to 80840 (order Burkholderiales).
+wd_0412/analyses/nod_bin.17_info.txt:All input genomes belong to 85023 (family Microbacteriaceae).
+wd_0412/analyses/nod_bin.18_info.txt:All input genomes belong to 1633335 (species Thalassobaculum fulvum).
+wd_0412/analyses/nod_bin.19_info.txt:All input genomes belong to 274591 (genus Hoeflea).
+wd_0412/analyses/nod_bin.1_info.txt:All input genomes belong to 690086 (genus Salinarimonas).
+wd_0412/analyses/nod_bin.2_info.txt:All input genomes belong to 1925762 (species Algoriphagus marinus).
+wd_0412/analyses/nod_bin.3_info.txt:All input genomes belong to 1853230 (family Crocinitomicaceae).
+wd_0412/analyses/nod_bin.4_info.txt:All input genomes belong to 2609175 (species Alkalicaulis satelles).
+wd_0412/analyses/nod_bin.5_info.txt:All input genomes belong to 28211 (class Alphaproteobacteria).
+wd_0412/analyses/nod_bin.6_info.txt:All input genomes belong to 1914872 (strain Nodularia spumigena UHCC 0039).
+wd_0412/analyses/nod_bin.7_info.txt:All input genomes belong to 2 (superkingdom Bacteria).
+wd_0412/analyses/nod_bin.8_info.txt:All input genomes belong to 203683 (class Planctomycetia).
+wd_0412/analyses/nod_bin.9_info.txt:All input genomes belong to 411684 (strain Hoeflea phototrophica DFL-43).
