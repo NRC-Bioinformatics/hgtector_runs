@@ -22,17 +22,16 @@ rule target:
         # #wdir + "/merged_genomes/genomes_length_info.txt",
         # #wdir + "/merged_genomes/genomes_info.txt"
         #wdir + "/analyses/most_abundant_groups_assignments.tsv"
-        wdir + "/analyses/order_level_transfers.csv",
-        # expand(
-        #     #  wdir + "/renamed_genomes/{stem}.fasta",
-        #     #wdir + "/kaiju/{stem}_info.txt",
-        #     #wdir + "/kaiju/{stem}__length_info.txt",
-        #     #wdir + "/analyses/{stem}_groups_assignments.txt",
-        #     #wdir + "/analyses/{stem}_info.txt",
-        #     wdir + "/analyses/{stem}_matches_to_community.tsv",
-        #     #wdir + "/searches/{stem}_info.txt",
-        #     stem = stems
-        # )
+        #wdir + "/analyses/order_level_transfers.csv",
+        #wdir + "/merged_genomes/proteins.fasta",
+        #wdir + "/merged_genomes/proteins.fasta.dmnd"
+        #expand(wdir + "/searches/{stem}_vs_matches.csv", stem = stems),
+        wdir + "/analyses/self_level_transfers.csv"
+
+rule target2:
+    input:
+        expand(wdir + "/searches/{stem}_vs_matches.csv", stem = stems)
+
 rule analyse_kaiju_assign_taxonomy:
     input:
         linf = wdir + "/merged_genomes/genomes_length_info.txt",
@@ -79,6 +78,72 @@ rule merge:
         """
         cat {input} > {output}
         """
+
+rule merge_proteins:
+    input: 
+        expand(config["bins"] + "/{stem}.faa",
+        stem = stems)
+    output:
+        wdir + "/merged_genomes/proteins.fasta"
+    shell:
+        """
+        cat {input} > {output}
+        """
+
+rule make_dimond_db4prot:
+    input:
+        wdir + "/merged_genomes/proteins.fasta"
+    output:
+        wdir + "/merged_genomes/proteins.fasta.dmnd"
+    shell:
+        """
+        makedb --in {input} --db {input}
+
+        """
+
+rule searchVSallprots:
+    input: config["bins"] + "/{stem}.faa"
+    output:
+        of = wdir + "/searches/{stem}_vsallbins.txt"
+    params:
+        db = wdir + "/merged_genomes/proteins.fasta",
+        tmp = wdir + "/searches/{stem}_tmp_vsallprots"
+    threads: 96
+    conda: "hgtector"
+    shell:
+        """
+        mkdir -p {params.tmp}
+         diamond blastp -d {params.db} --threads {threads}  --query-cover 50 --max-target-seqs 100000000 \
+         --outfmt 6 qseqid sseqid pident evalue bitscore qcovhsp --query {input} --out {output.of} --evalue 10 --tmpdir {params.tmp}
+        """
+
+rule searchVSnr:
+    input: config["bins"] + "/{stem}.faa"
+    output:
+        of = wdir + "/searches/{stem}_vsnr.txt"
+    params:
+        db = config["hgdb"]+"/diamond/db.dmnd",
+        tmp = wdir + "/searches/{stem}_tmp_vsnr"
+    threads: 96
+    conda: "hgtector"
+    shell:
+        """
+        mkdir -p {params.tmp}
+         diamond blastp -d {params.db} --threads {threads}  --query-cover 50 --max-target-seqs 100000000 \
+         --outfmt 6 qseqid sseqid pident evalue bitscore qcovhsp staxids --query {input} --out {output.of} --evalue 10 --tmpdir {params.tmp}
+        """
+
+rule wxtract_matches:
+    input:
+        vsbalt =  wdir + "/searches/{stem}_vsnr.txt",
+        vsself =  wdir + "/searches/{stem}_vsallbins.txt",
+    output:
+        vsself =  wdir + "/searches/{stem}_vs_matches.csv"
+    threads: 16
+    notebook:
+        "notebooks/analyse_sekf.r.ipynb"        
+
+#1.0e-5 
 
 rule search_kaiju:
     input: fa = wdir + "/merged_genomes/genomes.fasta"
@@ -164,6 +229,14 @@ rule analyse_donnors:
     notebook:
         "notebooks/order_level_analysis.r.ipynb"
 
+rule analyse_donors_fine:
+    input:
+        info = expand(wdir + "/searches/{stem}_vs_matches.csv", stem = stems),
+    output:
+        plot = wdir + "/analyses/self_level_transfers.svg",
+        csv = wdir + "/analyses/self_level_transfers.csv"
+    notebook:
+        "notebooks/self_level_analysis.r.ipynb"
 
 
 # rule exctract_not_cloes:
